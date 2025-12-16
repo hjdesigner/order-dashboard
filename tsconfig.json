@@ -1,5 +1,5 @@
 {
-  "compilerOptions": {
+  "compilerOptions": {    
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -19,7 +19,9 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@/components": ["./app/components"],
+      "@/icons/*": ["./public/assets/icons/*"]
     }
   },
   "include": [

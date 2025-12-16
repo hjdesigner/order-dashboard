@@ -2,8 +2,20 @@
   /* COLORS */
   --color-bg: #fbf9fa;
   --color-primary: #0a0a0a;
+  --color-white: #FFFFFF;
+  --color-border: #f3efef;
 
    /* Typography */
   --font-family-base: 'Roboto', system-ui, sans-serif;
   --font-size-base: 16px;
+
+  /* Size */
+  --max-width: 1440px;
+
+  /* Spaces */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
 }
