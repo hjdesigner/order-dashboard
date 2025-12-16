@@ -1,0 +1,9 @@
+:root {
+  /* COLORS */
+  --color-bg: #fbf9fa;
+  --color-primary: #0a0a0a;
+
+   /* Typography */
+  --font-family-base: 'Roboto', system-ui, sans-serif;
+  --font-size-base: 16px;
+}
