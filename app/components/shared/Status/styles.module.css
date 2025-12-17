@@ -1,0 +1,26 @@
+.status {
+  padding: 0 var(--spacing-md);
+  border-radius: var(--border-radius);
+  line-height: 27px;
+
+  &.delivered {
+    background-color: var(--color-bg-delived);
+    color: var(--color-text-delived);
+  }
+  &.sent {
+    background-color: var(--color-bg-sent);
+    color: var(--color-text-sent);
+  }
+  &.processing {
+    background-color: var(--color-bg-processing);
+    color: var(--color-text-processing);
+  }
+  &.pending {
+    background-color: var(--color-bg-pending);
+    color: var(--color-text-pending);
+  }
+  &.cancel {
+    background-color: var(--color-bg-cancel);
+    color: var(--color-text-cancel);
+  }
+}

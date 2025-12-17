@@ -1,0 +1,76 @@
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-white);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--border-radius);
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  box-shadow: var(--box-shadow);
+  transition: box-shadow var(--animation-setting);
+
+  @media (prefers-reduced-motion: no-preference) {
+    &:hover {
+      box-shadow: var(--box-shadow-hover);
+    }
+  }  
+
+  @media screen and (min-width: 1280px) {
+    align-items: center;
+    flex-direction: row;
+  }
+}
+.cardLeft {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+.cardCodeStatus {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+.cardCode {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+}
+.cities {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+.cityText {
+  color: var(--color-secondary);
+  font-size: var(--font-size-sm);
+}
+.cardRight {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+
+  @media screen and (min-width: 1280px) {
+    align-items: center;
+    flex-direction: row;
+  }
+}
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+.cardInfoTitle{
+  font-weight: var(--font-weight-medium);
+}
+.cardInfoText {
+  color: var(--color-secondary);
+}

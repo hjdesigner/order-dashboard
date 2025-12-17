@@ -2,12 +2,28 @@
   /* COLORS */
   --color-bg: #fbf9fa;
   --color-primary: #0a0a0a;
+  --color-secondary: #6a7282;
   --color-white: #FFFFFF;
   --color-border: #f3efef;
+  --color-bg-delived: #dbfce7;
+  --color-text-delived: #01230f;
+  --color-bg-sent: #f3e8ff;
+  --color-text-sent: #8200db;
+  --color-bg-processing: #dbeafe;
+  --color-text-processing: #1447e6;
+  --color-bg-pending: #f3f4f6;
+  --color-text-pending: #364153;
+  --color-bg-cancel: #ffe2e2;
+  --color-text-cancel: #c10007;
 
    /* Typography */
   --font-family-base: 'Roboto', system-ui, sans-serif;
   --font-size-base: 16px;
+  --font-size-sm: 14px;
+  --font-size-lg: 18px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 700;
 
   /* Size */
   --max-width: 1440px;
@@ -18,4 +34,14 @@
   --spacing-md: 16px;
   --spacing-lg: 24px;
   --spacing-xl: 32px;
+
+  /* Border */
+  --border-radius: 16px;
+
+  /* Shadown */
+  --box-shadow: 0 12px 40px 0 rgba(0,0,0,.05);
+  --box-shadow-hover: 0 12px 40px 0 rgba(0,0,0,.09);
+
+  /* Animations */
+  --animation-setting: 150ms ease-in-out;
 }
