@@ -1,4 +1,4 @@
-import { Card } from '@/components';
+import { Card, Filter } from '@/components';
 import type { Order } from '@/types/order';
 import styles from './styles.module.css';
 
@@ -10,7 +10,10 @@ const List = ({ orders }: ListProps) => {
   return (
     <section className={styles.listContainer}>
       <div className={styles.listWrapper}>
-        <h1 className={styles.listTitle}>My Orders</h1>
+        <header className={styles.listHeader}>
+          <h1 className={styles.listTitle}>My Orders</h1>
+          <Filter />
+        </header>
         <ul className={styles.listItems} role="list">
           {orders.length ? (
             orders.map((order) => <Card key={order.id} {...order} />)

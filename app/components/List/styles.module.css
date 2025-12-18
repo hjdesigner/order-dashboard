@@ -31,3 +31,15 @@
   font-size: var(--font-size-lg);
   line-height: 42px;
 }
+.listHeader {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: var(--spacing-md);
+
+  @media screen and (min-width: 640px) {
+    flex-direction: row;
+    justify-content: space-between;
+  } 
+}
