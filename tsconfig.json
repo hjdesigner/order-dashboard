@@ -23,7 +23,8 @@
       "@/components": ["./app/components"],
       "@/icons/*": ["./public/assets/icons/*"],
       "@/services/*": ["./app/services/*"],
-      "@/types/*": ["./app/types/*"]
+      "@/types/*": ["./app/types/*"],
+      "@/store/*": ["./app/store/*"]
     }
   },
   "include": [

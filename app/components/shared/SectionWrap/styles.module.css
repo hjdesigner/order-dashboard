@@ -1,0 +1,15 @@
+.sectionWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: var(--spacing-xl);
+}
+.sectionContainer {
+  width: 100%;
+  display: grid;
+  gap: var(--spacing-lg);
+  grid-template-columns: 1fr;
+  max-width: var(--max-width);
+  padding: 0 var(--spacing-md);
+  box-sizing: border-box;
+}

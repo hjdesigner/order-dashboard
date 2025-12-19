@@ -17,6 +17,13 @@ const Hero = () => {
           />
           Order Dashboard
         </Link>
+        <nav className={styles.heroNav}>
+          <ul>
+            <li>
+              <Link href="/manage-feature-flag">Manage Feature Flag</Link>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
   );

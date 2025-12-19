@@ -1,5 +1,6 @@
-import { render, screen, fireEvent } from '@testing-library/react';
+import { screen, fireEvent } from '@testing-library/react';
 import Filter from './Filter';
+import { renderWithProviders } from '../../../utils/test-utils';
 import type { OrderStatus } from '@/types/order';
 
 const mockPush = jest.fn();
@@ -22,7 +23,14 @@ describe('Filter component', () => {
 
   it('renders all options', () => {
     mockGet.mockReturnValue('');
-    render(<Filter />);
+    renderWithProviders(<Filter />, {
+      preloadedState: {
+        featureFlags: {
+          flags: [{ id: '1', name: 'hasFilter', status: true }],
+          loading: false,
+        },
+      },
+    });
     const options = screen.getAllByRole('option');
     expect(options).toHaveLength(6);
     expect(screen.getByText('All Status')).toBeInTheDocument();
@@ -35,14 +43,28 @@ describe('Filter component', () => {
 
   it('sets currentStatus from searchParams', () => {
     mockGet.mockReturnValue('Sent');
-    render(<Filter />);
+    renderWithProviders(<Filter />, {
+      preloadedState: {
+        featureFlags: {
+          flags: [{ id: '1', name: 'hasFilter', status: true }],
+          loading: false,
+        },
+      },
+    });
     const select = screen.getByRole('combobox') as HTMLSelectElement;
     expect(select.value).toBe('Sent');
   });
 
   it('calls router.push with the correct params when selecting a status', () => {
     mockGet.mockReturnValue('');
-    render(<Filter />);
+    renderWithProviders(<Filter />, {
+      preloadedState: {
+        featureFlags: {
+          flags: [{ id: '1', name: 'hasFilter', status: true }],
+          loading: false,
+        },
+      },
+    });
     const select = screen.getByRole('combobox');
     fireEvent.change(select, { target: { value: 'Delivered' } });
     expect(mockPush).toHaveBeenCalledWith('?status=Delivered');
@@ -50,7 +72,14 @@ describe('Filter component', () => {
 
   it('removes status from params when selecting "All Status"', () => {
     mockGet.mockReturnValue('Sent');
-    render(<Filter />);
+    renderWithProviders(<Filter />, {
+      preloadedState: {
+        featureFlags: {
+          flags: [{ id: '1', name: 'hasFilter', status: true }],
+          loading: false,
+        },
+      },
+    });
     const select = screen.getByRole('combobox');
     fireEvent.change(select, { target: { value: '' } });
     expect(mockPush).toHaveBeenCalledWith('?');

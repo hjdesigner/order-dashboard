@@ -3,3 +3,7 @@ export { default as List } from './List';
 export { default as Card } from './shared/Card';
 export { default as Status } from './shared/Status';
 export { default as Filter } from './shared/Filter';
+export { default as SectionWrap } from './shared/SectionWrap';
+export { default as FeatureFlags } from './FeatureFlags';
+export { default as Heading } from './shared/Heading';
+export { default as CardFlag } from './shared/CardFlag';

@@ -1,0 +1,6 @@
+.flagItems {
+  width: 100%;
+  display: grid;
+  gap: var(--spacing-md);
+  grid-template-columns: minmax(0, 1fr);
+}

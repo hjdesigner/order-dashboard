@@ -2,7 +2,7 @@
 
 import { useRouter, useSearchParams } from 'next/navigation';
 import type { OrderStatus } from '@/types/order';
-
+import { useFeatureFlag } from '@/app/hook/useFeatureFlag ';
 import styles from './styles.module.css';
 
 const OPTIONS: OrderStatus[] = [
@@ -16,6 +16,9 @@ const OPTIONS: OrderStatus[] = [
 const Filter = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
+  const hasFilter = useFeatureFlag('hasFilter');
+
+  if (!hasFilter) return null;
 
   const currentStatus = searchParams.get('status') ?? '';
 
