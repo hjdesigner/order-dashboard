@@ -17,6 +17,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   gap: var(--spacing-md);
+  align-items: center;
 
   @media screen and (min-width: 640px) {
     flex-direction: row;
