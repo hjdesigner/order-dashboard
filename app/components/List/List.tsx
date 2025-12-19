@@ -13,7 +13,7 @@ const List = ({ orders }: ListProps) => {
         <Heading as="h1">My Orders</Heading>
         <Filter />
       </header>
-      <ul className={styles.listItems} role="list">
+      <ul className={styles.listItems} role="list" data-testid="order-list">
         {orders.length ? (
           orders.map((order) => <Card key={order.id} {...order} />)
         ) : (

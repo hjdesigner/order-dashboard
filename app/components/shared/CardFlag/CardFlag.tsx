@@ -19,10 +19,11 @@ const CardFlag = ({ flag }: CardFlagProps) => {
   const dispatch = useDispatch<AppDispatch>();
 
   return (
-    <li className={styles.cardFlag}>
-      <span>{flag.name}</span>
+    <li className={styles.cardFlag} data-testid="feature-flag-item">
+      <span data-testid="feature-flag-name">{flag.name}</span>
 
       <button
+        data-testid="feature-flag-toggle"
         className={clsx(styles.flagButton, { [styles.disable]: flag.status })}
         onClick={() =>
           dispatch(

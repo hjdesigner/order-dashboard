@@ -40,6 +40,7 @@ const Filter = () => {
         className={styles.filterSelect}
         value={currentStatus}
         onChange={handleChange}
+        data-testid="status-filter"
       >
         <option value="">All Status</option>
         {OPTIONS.map((status) => (
