@@ -41,6 +41,7 @@ const Filter = () => {
         value={currentStatus}
         onChange={handleChange}
         data-testid="status-filter"
+        aria-label="Filter orders by status"
       >
         <option value="">All Status</option>
         {OPTIONS.map((status) => (

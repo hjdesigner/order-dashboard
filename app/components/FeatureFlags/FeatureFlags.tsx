@@ -33,7 +33,7 @@ const FeatureFlags = () => {
       )}
 
       {!loading && !error && flags.length > 0 && (
-        <ul className={styles.flagItems}>
+        <ul className={styles.flagItems} role="list">
           {flags.map((flag) => (
             <CardFlag key={flag.id} flag={flag} />
           ))}

@@ -19,7 +19,11 @@ const CardFlag = ({ flag }: CardFlagProps) => {
   const dispatch = useDispatch<AppDispatch>();
 
   return (
-    <li className={styles.cardFlag} data-testid="feature-flag-item">
+    <li
+      className={styles.cardFlag}
+      data-testid="feature-flag-item"
+      role="listitem"
+    >
       <span data-testid="feature-flag-name">{flag.name}</span>
 
       <button
