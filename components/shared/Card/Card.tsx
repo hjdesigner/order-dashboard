@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import IconUrl from '@/icons/arrowRight.svg?url';
 import { Status } from '@/components';
-import { formatPrice } from '@/app/utils/format';
+import { formatPrice } from '@/utils/format';
 import type { Order } from '@/types/order';
 import styles from './styles.module.css';
 

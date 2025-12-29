@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 import { Hero } from '@/components';
 import { Providers } from './providers';
-import { FeatureFlagsBootstrap } from './hook/useFeatureFlagsBootstrap';
-import './styles/globals.css';
+import { FeatureFlagsBootstrap } from '../hook/useFeatureFlagsBootstrap';
+import '../styles/globals.css';
 
 const roboto = Roboto({
   subsets: ['latin'],

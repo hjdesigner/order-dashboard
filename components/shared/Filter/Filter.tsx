@@ -2,7 +2,7 @@
 
 import { useRouter, useSearchParams } from 'next/navigation';
 import type { OrderStatus } from '@/types/order';
-import { useFeatureFlag } from '@/app/hook/useFeatureFlag ';
+import { useFeatureFlag } from '@/hook/useFeatureFlag ';
 import styles from './styles.module.css';
 
 const OPTIONS: OrderStatus[] = [

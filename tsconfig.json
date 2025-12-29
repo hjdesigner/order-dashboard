@@ -20,11 +20,11 @@
     ],
     "paths": {
       "@/*": ["./*"],
-      "@/components": ["./app/components"],
+      "@/components": ["./components"],
       "@/icons/*": ["./public/assets/icons/*"],
-      "@/services/*": ["./app/services/*"],
-      "@/types/*": ["./app/types/*"],
-      "@/store/*": ["./app/store/*"]
+      "@/services/*": ["./services/*"],
+      "@/types/*": ["./types/*"],
+      "@/store/*": ["./store/*"]
     }
   },
   "include": [
